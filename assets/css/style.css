@@ -71,7 +71,7 @@
 }
 
 #car {
-    animation: traffic 15s ease-in-out 1s infinite;
+    animation: traffic 15s ease infinite;
 }
 
 @keyframes helic {
@@ -89,5 +89,5 @@
 }
 
 #heli {
-    animation: helic 15s linear 1s infinite;
+    animation: helic 15s linear infinite;
 }
