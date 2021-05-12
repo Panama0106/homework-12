@@ -1,26 +1,22 @@
 #road {
-    width: 700px;
+    background-image: url(../img/road.png);
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
 }
 
 #car {
-    width: 100px;
-    position: absolute;
-    left: 460px;
-    top: 60px;
+    width: 10%;
+    position: relative;
+    top: 92px;
+    left: 200px;
 }
 
-#heli {
-    width: 200px;
-    position: absolute;
-    bottom: 200px;
-    right: 580px;
-    transform: rotate(-20deg);
-}
 
 @keyframes traffic {
     0% {
-        left: 460px;
-        top: 60px;
+        left: 200px;
+        top: 92px;
     }
 
     8% {
@@ -28,8 +24,8 @@
     }
 
     15% {
-        top: 60px;
-        left: 890px;
+        top: 92px;
+        left: 820px;
         transform: rotate(90deg);
     }
 
@@ -38,8 +34,8 @@
     }
 
     40% {
-        left: 890px;
-        top: 590px;
+        left: 820px;
+        top: 850px;
         transform: rotate(180deg);
     }
 
@@ -48,8 +44,8 @@
     }
 
     65% {
-        top: 590px;
-        left: 362px;
+        top: 850px;
+        left: 65px;
         transform: rotate(270deg);
     }
 
@@ -58,14 +54,13 @@
     }
 
     90% {
-        top: 60px;
-        left: 362px;
+        top: 92px;
+        left: 65px;
         transform: rotate(360deg);
     }
 
     100% {
-        top: 60px;
-        left: 460px;
+        top: 92px;
         transform: rotate(360deg);
     }
 }
@@ -74,20 +69,3 @@
     animation: traffic 15s ease infinite;
 }
 
-@keyframes helic {
-    0% {
-        bottom: 200px;
-        right: 580px;
-        transform: rotate(-20deg);
-    }
-
-    100% {
-        bottom: 200px;
-        right: 580px;
-        transform: rotate(340deg);
-    }
-}
-
-#heli {
-    animation: helic 15s linear infinite;
-}
